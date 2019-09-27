@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wallet/screen/home.dart';
 import 'package:wallet/screen/login.dart';
 import 'package:wallet/screen/register.dart';
 
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
       routes: <String, WidgetBuilder> {
         "/login": (BuildContext context) => Login(), // unused
         "/register": (BuildContext context) => Register(),
+        "/home": (BuildContext context) => Home(),
       },
       debugShowCheckedModeBanner: false,
     );

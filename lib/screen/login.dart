@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' as prefix0;
 import 'package:wallet/components/external/boxCustom.dart';
 import 'package:wallet/components/external/screen.dart';
-import 'package:wallet/screen/register.dart';
 
 class Login extends StatelessWidget {
   @override
@@ -49,26 +49,31 @@ class Login extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.only(bottom: 60.0),
-              child: Container(
-                padding: EdgeInsets.symmetric(
-                  horizontal: 60.0,
-                  vertical: 8.0,
-                ),
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    begin: Alignment.centerRight,
-                    end: Alignment.centerLeft,
-                    colors: [
-                      Color.fromRGBO(234, 86, 253, 1.0),
-                      Color.fromRGBO(252, 190, 115, 1.0),
-                    ],
+              child: GestureDetector(
+                child: Container(
+                  padding: EdgeInsets.symmetric(
+                    horizontal: 60.0,
+                    vertical: 8.0,
                   ),
-                  borderRadius: BorderRadius.circular(5.0),
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.centerRight,
+                      end: Alignment.centerLeft,
+                      colors: [
+                        Color.fromRGBO(234, 86, 253, 1.0),
+                        Color.fromRGBO(252, 190, 115, 1.0),
+                      ],
+                    ),
+                    borderRadius: BorderRadius.circular(5.0),
+                  ),
+                  child: Text(
+                    "LOGIN",
+                    style: TextStyle(color: Colors.white, fontSize: 18.0),
+                  ),
                 ),
-                child: Text(
-                  "LOGIN",
-                  style: TextStyle(color: Colors.white, fontSize: 18.0),
-                ),
+                onTap: () {
+                  Navigator.pushNamed(context, "/home");
+                },
               ),
             ),
             GestureDetector(
