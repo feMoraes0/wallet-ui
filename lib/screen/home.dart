@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wallet/tab/account.dart';
 import 'package:wallet/tab/pay.dart';
 import 'package:wallet/tab/transfer.dart';
 import 'package:wallet/tab/wallet.dart';
@@ -15,9 +16,7 @@ class Home extends StatelessWidget {
             Wallet(),
             Transfer(),
             Pay(),
-            Container(
-              color: Colors.yellowAccent,
-            ),
+            Account(),
           ],
         ),
         bottomNavigationBar: TabBar(
@@ -57,7 +56,7 @@ class Home extends StatelessWidget {
               child: Tab(
                 icon: Padding(
                   padding: const EdgeInsets.only(top: 5.0),
-                  child: Icon(Icons.person_outline, size: 24.0,),
+                  child: Icon(Icons.person, size: 24.0,),
                 ),
                 child: Text("Account", style: TextStyle(fontSize: 11.0),),
               ),
