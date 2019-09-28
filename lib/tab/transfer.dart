@@ -187,13 +187,13 @@ class Transfer extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.symmetric(vertical: 30.0),
+              margin: EdgeInsets.symmetric(vertical: 40.0),
               child: Center(
                 child: RedButton(
                   text: "CONFIRM",
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),

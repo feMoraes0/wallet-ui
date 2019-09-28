@@ -27,7 +27,7 @@ class AppbarCustom extends StatelessWidget {
             style: TextStyle(
               fontSize: 21.0,
               fontWeight: FontWeight.w600,
-              color: Colors.redAccent,
+              color: Color(0xffff2d55),
             ),
           ),
           Icon(

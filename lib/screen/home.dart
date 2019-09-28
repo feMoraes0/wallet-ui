@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wallet/tab/pay.dart';
 import 'package:wallet/tab/transfer.dart';
 import 'package:wallet/tab/wallet.dart';
 
@@ -13,9 +14,7 @@ class Home extends StatelessWidget {
           children: <Widget>[
             Wallet(),
             Transfer(),
-            Container(
-              color: Colors.yellowAccent,
-            ),
+            Pay(),
             Container(
               color: Colors.yellowAccent,
             ),
@@ -64,7 +63,7 @@ class Home extends StatelessWidget {
               ),
             ),
           ],
-          labelColor: Colors.redAccent,
+          labelColor: Color(0xffff2d55),
           unselectedLabelColor: Colors.grey[300],
           indicatorColor: Colors.white,
         ),
