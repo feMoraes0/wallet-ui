@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:wallet/tab/wallet.dart';
+
 
 class Home extends StatelessWidget {
   @override
@@ -8,9 +10,7 @@ class Home extends StatelessWidget {
       child: Scaffold(
         body: TabBarView(
           children: <Widget>[
-            Container(
-              color: Colors.blueGrey,
-            ),
+            Wallet(),
             Container(
               color: Colors.yellowAccent,
             ),
