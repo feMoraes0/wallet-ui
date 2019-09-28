@@ -70,3 +70,10 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  fonts:
+    - family: SF Pro
+      fonts:
+        - asset: fonts/SF-Pro-Display-Regular.otf
+    - family: OCR
+      fonts:
+        - asset: fonts/OCR-A Regular.ttf

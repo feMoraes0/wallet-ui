@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
         "/register": (BuildContext context) => Register(),
         "/home": (BuildContext context) => Home(),
       },
+      theme: ThemeData(fontFamily: "SF Pro"),
       debugShowCheckedModeBanner: false,
     );
   }
