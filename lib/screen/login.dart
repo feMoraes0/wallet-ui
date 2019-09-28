@@ -11,99 +11,102 @@ class Login extends StatelessWidget {
       box: BoxCustom(
         width: size.width - 70.0,
         heigth: size.height - 420.0,
-        child: Column(
-          children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.only(bottom: 30.0),
-              child: TextField(
-                decoration: InputDecoration(
-                  labelText: "Email",
-                  labelStyle: TextStyle(
-                    color: Color.fromRGBO(155, 155, 155, 1.0),
-                  ),
-                  enabledBorder: const UnderlineInputBorder(
-                    borderSide: const BorderSide(
+        child: Container(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.only(bottom: 30.0),
+                child: TextField(
+                  decoration: InputDecoration(
+                    labelText: "Email",
+                    labelStyle: TextStyle(
                       color: Color.fromRGBO(155, 155, 155, 1.0),
-                      width: 1.0,
+                    ),
+                    enabledBorder: const UnderlineInputBorder(
+                      borderSide: const BorderSide(
+                        color: Color.fromRGBO(155, 155, 155, 1.0),
+                        width: 1.0,
+                      ),
                     ),
                   ),
                 ),
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(bottom: 65.0),
-              child: TextField(
-                decoration: InputDecoration(
-                  labelText: "Password",
-                  labelStyle: TextStyle(
-                    color: Color.fromRGBO(155, 155, 155, 1.0),
-                  ),
-                  enabledBorder: const UnderlineInputBorder(
-                    borderSide: const BorderSide(
+              Padding(
+                padding: const EdgeInsets.only(bottom: 65.0),
+                child: TextField(
+                  decoration: InputDecoration(
+                    labelText: "Password",
+                    labelStyle: TextStyle(
                       color: Color.fromRGBO(155, 155, 155, 1.0),
-                      width: 1.0,
+                    ),
+                    enabledBorder: const UnderlineInputBorder(
+                      borderSide: const BorderSide(
+                        color: Color.fromRGBO(155, 155, 155, 1.0),
+                        width: 1.0,
+                      ),
                     ),
                   ),
                 ),
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(bottom: 60.0),
-              child: GestureDetector(
+              Padding(
+                padding: const EdgeInsets.only(bottom: 60.0),
+                child: GestureDetector(
+                  child: Container(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 60.0,
+                      vertical: 8.0,
+                    ),
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        begin: Alignment.centerRight,
+                        end: Alignment.centerLeft,
+                        colors: [
+                          Color.fromRGBO(234, 86, 253, 1.0),
+                          Color.fromRGBO(252, 190, 115, 1.0),
+                        ],
+                      ),
+                      borderRadius: BorderRadius.circular(5.0),
+                    ),
+                    child: Text(
+                      "LOGIN",
+                      style: TextStyle(color: Colors.white, fontSize: 18.0),
+                    ),
+                  ),
+                  onTap: () {
+                    Navigator.pushNamed(context, "/home");
+                  },
+                ),
+              ),
+              GestureDetector(
                 child: Container(
-                  padding: EdgeInsets.symmetric(
-                    horizontal: 60.0,
-                    vertical: 8.0,
-                  ),
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.centerRight,
-                      end: Alignment.centerLeft,
-                      colors: [
-                        Color.fromRGBO(234, 86, 253, 1.0),
-                        Color.fromRGBO(252, 190, 115, 1.0),
-                      ],
-                    ),
-                    borderRadius: BorderRadius.circular(5.0),
-                  ),
-                  child: Text(
-                    "LOGIN",
-                    style: TextStyle(color: Colors.white, fontSize: 18.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text(
+                        "Don't have an account?",
+                        style: TextStyle(
+                          fontSize: 12.5,
+                          color: Colors.grey[400],
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                      Text(
+                        " Press here to Sign Up",
+                        style: TextStyle(
+                            fontSize: 12.5,
+                            color: Colors.redAccent,
+                            fontWeight: FontWeight.w700),
+                      )
+                    ],
                   ),
                 ),
                 onTap: () {
-                  Navigator.pushNamed(context, "/home");
+                  Navigator.pushNamed(context, "/register");
                 },
-              ),
-            ),
-            GestureDetector(
-              child: Container(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Text(
-                      "Don't have an account?",
-                      style: TextStyle(
-                        fontSize: 12.5,
-                        color: Colors.grey[400],
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
-                    Text(
-                      " Press here to Sign Up",
-                      style: TextStyle(
-                          fontSize: 12.5,
-                          color: Colors.redAccent,
-                          fontWeight: FontWeight.w700),
-                    )
-                  ],
-                ),
-              ),
-              onTap: () {
-                Navigator.pushNamed(context, "/register");
-              },
-            )
-          ],
+              )
+            ],
+          ),
         ),
       ),
       footer: Positioned(

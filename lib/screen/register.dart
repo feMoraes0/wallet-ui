@@ -13,6 +13,7 @@ class Register extends StatelessWidget {
         width: size.width - 70.0,
         heigth: size.height - 240.0,
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Padding(
               padding: const EdgeInsets.only(bottom: 30.0),
