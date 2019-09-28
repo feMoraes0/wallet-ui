@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wallet/tab/transfer.dart';
 import 'package:wallet/tab/wallet.dart';
 
 
@@ -11,9 +12,7 @@ class Home extends StatelessWidget {
         body: TabBarView(
           children: <Widget>[
             Wallet(),
-            Container(
-              color: Colors.yellowAccent,
-            ),
+            Transfer(),
             Container(
               color: Colors.yellowAccent,
             ),

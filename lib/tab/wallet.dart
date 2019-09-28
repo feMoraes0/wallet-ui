@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:wallet/components/internal/appbarCustom.dart';
+import 'package:wallet/components/internal/screen.dart';
 
 import 'package:wallet/data/data.dart';
 
 class Wallet extends StatelessWidget {
-
   List<Widget> renderCreditCards() {
     return List<Widget>.generate(creditCards.length, (index) {
       var data = creditCards[index];
@@ -24,59 +25,13 @@ class Wallet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Stack(
-        children: <Widget>[
-          SingleChildScrollView(
-            child: Container(
-              margin: EdgeInsets.only(top: 60.0),
-              child: Column(
-                children: renderCreditCards(),
-              ),
-            ),
-          ),
-          Positioned(
-            top: 0,
-            left: 0,
-            child: AppbarCustom(),
-          )
-        ],
-      ),
-    );
-  }
-}
-
-class AppbarCustom extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.symmetric(horizontal: 15.0),
-      height: 60.0,
-      width: MediaQuery.of(context).size.width,
-      color: Colors.white,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: <Widget>[
-          Icon(
-            Icons.arrow_back_ios,
-            size: 27.0,
-            color: Colors.white,
-          ),
-          Text(
-            "Wallet",
-            style: TextStyle(
-              fontSize: 21.0,
-              fontWeight: FontWeight.w600,
-              color: Colors.redAccent,
-            ),
-          ),
-          Icon(
-            Icons.notifications_none,
-            size: 27.0,
-            color: Colors.grey[600],
-          ),
-        ],
+    return InternalScreen(
+      appBar: AppbarCustom(text: "Wallet"),
+      body: Container(
+        margin: EdgeInsets.only(top: 60.0),
+        child: Column(
+          children: renderCreditCards(),
+        ),
       ),
     );
   }
