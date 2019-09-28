@@ -28,7 +28,7 @@ class Wallet extends StatelessWidget {
     return InternalScreen(
       appBar: AppbarCustom(text: "Wallet"),
       body: Container(
-        margin: EdgeInsets.only(top: 60.0),
+        margin: EdgeInsets.only(top: 60.0, bottom: 30.0),
         child: Column(
           children: renderCreditCards(),
         ),
