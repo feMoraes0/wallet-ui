@@ -10,13 +10,13 @@ class Login extends StatelessWidget {
     return Screen(
       box: BoxCustom(
         width: size.width - 70.0,
-        heigth: size.height - 420.0,
+        heigth: size.height - 400.0,
         child: Container(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Padding(
-                padding: const EdgeInsets.only(bottom: 30.0),
+                padding: const EdgeInsets.only(bottom: 20.0),
                 child: TextField(
                   decoration: InputDecoration(
                     labelText: "Email",
@@ -33,7 +33,7 @@ class Login extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(bottom: 65.0),
+                padding: const EdgeInsets.only(bottom: 50.0),
                 child: TextField(
                   decoration: InputDecoration(
                     labelText: "Password",
@@ -50,7 +50,7 @@ class Login extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(bottom: 60.0),
+                padding: const EdgeInsets.only(bottom: 45.0),
                 child: GestureDetector(
                   child: Container(
                     padding: EdgeInsets.symmetric(

@@ -63,7 +63,7 @@ class Home extends StatelessWidget {
             ),
           ],
           labelColor: Color(0xffff2d55),
-          unselectedLabelColor: Colors.grey[300],
+          unselectedLabelColor: Colors.grey[400],
           indicatorColor: Colors.white,
         ),
       ),
