@@ -18,11 +18,14 @@ The design concept of this app can be find <a href="https://www.behance.net/gall
 
 
 ## Running the project
->To run this project you will need flutter and git installed.
+To run this project you will need [flutter](https://flutter.dev/) and [git](https://git-scm.com/) installed.
 
 ```$bash
 # Clone this repository
 $ git clone https://github.com/femoraes0/wallet-ui.git
+
+# Access new folder
+$ cd wallet-ui
 
 # Install packages
 $ flutter packages get
@@ -30,3 +33,7 @@ $ flutter packages get
 # Run
 $ flutter run
 ```
+
+## Contact
+- [LinkedIn](https://www.linkedin.com/in/fernando-moraes-48a26916a/)
+- [Email](fernandomoraes.lopes@gmail.com)
