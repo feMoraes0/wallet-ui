@@ -1,8 +1,8 @@
 
 <h1 align="center">Wallet</h1>
 
-A flutter project focused to clone an UI. The main object was develop my knowledges about Flutter.
-The design concept of this app can be find <a href="https://www.behance.net/gallery/56512263/Wallet-Banking-App?tracking_source=curated_galleries_list">here</a>.
+## Objective
+Develop my knowledges about Flutter cloning an user interface found in behance.
 
 ## Prints
 
@@ -16,23 +16,27 @@ The design concept of this app can be find <a href="https://www.behance.net/gall
 <img width="200" src="https://i.pinimg.com/originals/cf/a8/27/cfa82797eba0ee1ec6cf83626e7b9f2e.png"/>
 </p>
 
+## How to use
 
-## Running the project
-To run this project you will need [flutter](https://flutter.dev/) and [git](https://git-scm.com/) installed.
+To clone and run this application, you'll need [Git](https://git-scm.com/downloads) and [Flutter](https://flutter.dev/docs/get-started/install) installed on your computer. From your command line:
 
 ```$bash
 # Clone this repository
 $ git clone https://github.com/femoraes0/wallet-ui.git
 
-# Access new folder
+# Go into the repository
 $ cd wallet-ui
 
-# Install packages
+# Install dependencies
 $ flutter packages get
 
-# Run
+# Run the app
 $ flutter run
 ```
 
+## Credits
+  - <a target="_blank" href="https://www.behance.net/gallery/56512263/Wallet-Banking-App?tracking_source=curated_galleries_list">Design</a>
+
 ## Contact
-- [LinkedIn](https://www.linkedin.com/in/fernando-moraes-48a26916a/)
+  - <a target="_blank" href="https://www.linkedin.com/in/fernando-moraes-48a26916a/">LinkedIn</a>
+  - <a target="_blank" href="mailto:fernandomoraes.lopes@gmail.com">E-mail</a>
